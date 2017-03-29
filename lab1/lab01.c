@@ -15,16 +15,15 @@ carta *cria_lista(int tipo, indice *ind){
       return kbca;
   }
   else if(tipo == 2){
-      i++;
-      ind->J[i] = kbca;
       kbca->prox = NULL;
+      k++;
       return kbca;
+
   }
   else if(tipo == 3){
-      j++;
-      ind->S[j] = kbca;
       kbca->prox = NULL;
       return kbca;
+      l++;
   }
   return NULL;
 }

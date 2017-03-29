@@ -13,7 +13,7 @@ struct carta{
 
 /*indice que indica as outras listas para analise de jogada*/
 /*obs: a primeira carta encontra-se no prox do prox (kbc-kbc-carta)*/
-int i, j;
+int k, l;
 typedef struct _indice{
   carta *estoque;
   carta *descarte;
