@@ -7,21 +7,13 @@ int main(int argc, char const *argv[]) {
   indice *ind = malloc(sizeof(indice));
 
   baralho = cria_lista(0, ind);
-  p = baralho;
 
   scanf("%d%c ", &num, &naipe);
   insere_carta(baralho, num, naipe, 0);
 
-  p = p->prox;
-
   for (i = 0; i < 51; i++) {//52
     scanf("%d%c ", &num, &naipe);
     insere_carta(baralho, num, naipe, 0);
-
-    if(p != NULL){
-      printf(">%d %c\n", p->num, p->naipe);
-      p = p->prox;
-    }
   }
 /*
   while(p != NULL){
